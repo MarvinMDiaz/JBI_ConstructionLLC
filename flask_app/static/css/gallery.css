@@ -1,0 +1,84 @@
+#Gallery{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.galleryContainer{
+    width: 89%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 70px;
+}
+
+.galleryHeader h4{
+    justify-content: flex-start;
+    font-family: 'Crimson Text', serif;
+    font-size: 30px;
+    color: #0fa6f5 ;
+    text-align: center;
+}
+
+.galleryHeader h3{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 30px;
+    text-align: center;
+}
+
+.galleryButton{
+    display: flex;
+    justify-content: space-between;
+
+}
+.galleryButton h3{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 30px;
+    display: inline;
+}
+.galleryButton button{
+    width: 150px;
+    height: 45px;
+    background-color: #0fa6f5 ;
+    color: #fff;
+    border-style: none;
+    cursor: pointer;
+    border-radius: 5px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3);
+
+}
+
+.galleryShowcase{
+    width: 100%;
+    height: 100%;
+    margin-top: 85px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+
+}
+
+.galleryImage{
+    width: 380px;
+
+}
+.galleryImage img{
+    width: 100%;
+    box-shadow: rgba(99, 99, 99, 0.45) 0px 4px 8px 2px;
+    background-size: cover; 
+    height: 450px;
+    margin-bottom: 55px;
+
+}
+
+@media(min-width:1833px){
+
+    #Revies{
+        height: 85vh;
+    }
+    .galleryContainer{
+    width: 70%;
+    margin-top: 0px;
+}
+}
+
+

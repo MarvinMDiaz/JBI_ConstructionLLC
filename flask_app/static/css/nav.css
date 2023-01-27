@@ -1,0 +1,142 @@
+
+nav{
+    width: 84%;
+    background-color: aliceblue;
+    align-items: center;
+    margin: 0 auto;
+    height: 70px;
+    border-radius: 5px;
+    margin-top: 15px;
+    display: flex;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    }
+
+.nav_links{
+    display: flex;
+    list-style-type: none;
+    margin-left: 10px;
+    width: 60%;
+    cursor: pointer;
+
+}
+.nav_links a:hover{
+    color: #0fa6f5;
+}
+.nav_links a{
+    margin: 18px;
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+}
+
+.nav_social{
+    display: flex;
+    width: 40%;
+    height: 100%;
+    justify-content: end;
+    align-items: center;
+}
+.line2{
+    height: 55%;
+    width: 1px;
+    background-color: rgb(215, 215, 215);
+}
+
+
+.nav_social button{
+    height: 45px;
+    width: 150px;
+    border-radius: 5px;
+    border-style: solid;
+    background-color: #0fa6f5 ;
+    cursor: pointer;
+    margin-left: 10%;
+    margin-right: 10%;
+    border-color: #0fa6f5;
+}
+.nav_social button:hover{
+    background-color: #064466;
+}
+button a{
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Nav Bar Section */
+
+
+@media(min-width:1015px){
+    .box2{
+        margin-left: .5px;
+    }
+    .call{
+        width: 50%;
+    }
+    .mail{
+        width: 40%;
+    }
+}
+
+@media( max-width: 1014px){
+
+    .bars{
+        display: block;
+        width: 100%;
+        display: flex;
+    }
+    #close{
+        display: none;
+    }
+    .box2{
+        display: none;
+    }
+    nav{
+        display: none;
+        width: 100%;
+        height: 380px;
+        opacity: .88;
+        margin-top: 0px;
+        background-color: rgb(59, 59, 59);
+
+    }
+
+    .nav_links{
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        cursor: pointer;
+    }
+
+    .nav_links a{
+        color: #fff;
+        display: flex;
+    }
+
+    .nav_social {
+        display: none;
+    }
+
+}
+@media(min-width:1280px){
+    .mail{
+        width: 15%;
+    }
+}
+
+@media(min-width:1445px){
+    .logo{
+        width: 63%;
+    }
+    nav{
+        width: 63%;
+    }
+    .box2{
+        width: 40%;
+    }
+}
+
+
+

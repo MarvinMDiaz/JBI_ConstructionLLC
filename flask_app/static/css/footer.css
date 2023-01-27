@@ -1,0 +1,130 @@
+footer{
+    width: 100%;
+    background-color: rgb(5, 30, 45);
+
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footerContainer{
+    width: 84%;
+    height: 90%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.footerContents{
+    width: 28%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.footerContents h3{
+    margin-top: 15px;
+    color: #fff;
+    margin-bottom: 5px;
+
+}
+.footerContents p{
+    margin-top: 30px;
+    color: rgb(134, 134, 134);
+}
+
+.linkContainer{
+    display: flex;
+    gap: 60px;
+    list-style-type: none;
+
+}
+.links a{
+    text-decoration: none;
+}
+
+.linkContainer p:hover{
+    color: #0fa6f5;
+}
+
+.emailFooter{
+    color:  #0fa6f5 ;
+    text-decoration: none;
+}
+.colorLine1{
+    height: 2px;
+    background-color: #0fa6f5;
+    width: 65px;
+    margin-top: 15px;
+}.colorLine2{
+    height: 2px;
+    background-color: #0fa6f5;
+    width: 62px;
+    margin-top: 15px;
+
+}
+.colorLine3{
+    height: 2px;
+    background-color: #0fa6f5;
+    width: 80px;
+    margin-top: 15px;
+
+}
+.hidden{
+    display: none;
+}
+.links2 a{
+    text-decoration: none;
+}
+
+.cc{
+    background-color: rgb(5, 30, 45);
+    text-align: center;
+    color: rgb(134, 134, 134);
+    font-size: 10px;
+    height: 50px;
+}
+
+@media(max-width: 940px){
+    .links2{
+        display: none;
+    }
+    .hidden{
+        display: flex;
+    }
+}
+
+@media(max-width: 765px){
+    .footerContainer{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 98%;
+        height: 100vh;
+    }
+
+    .footerContents{
+        width: 90%;
+        margin-top: 20px;
+    }
+    .footerContents h3{
+        margin-top: 20px;
+    }
+    .footerContents p{
+        margin-top: 20px;
+    }
+}
+
+@media screen and (min-width: 425px) and (max-width:659px) {
+   .footerContainer{
+    height: 110vh;
+   }
+ 
+}
+@media screen and (min-width: 375px) and (max-width:659px) {
+   .footerContainer{
+    height: 112vh;
+   }
+ 
+}
