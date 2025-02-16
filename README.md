@@ -1,17 +1,6 @@
 JBI Construction
 Welcome to the JBI Construction web application! This project is a Flask‐based website that integrates reCAPTCHA for form security, AWS SSM for securely managing secrets, and Amazon SES for sending emails.
 
-
-Table of Contents
-Overview
-Features
-Tech Stack
-Getting Started
-Configuration
-Deployment
-Contributing
-License
-Overview
 JBI Construction is a website showcasing construction services and providing a secure contact form. The site’s backend is built using the Flask framework, ensuring a modular MVC structure. It includes:
 
 reCAPTCHA to protect contact forms from spam and bots.
