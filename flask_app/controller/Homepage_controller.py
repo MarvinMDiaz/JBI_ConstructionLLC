@@ -1,17 +1,17 @@
 from flask import render_template, request, redirect, session, Flask
 import boto3  
-from config import Config 
+from flask_app.config import Config
 import requests
 from flask_app import app
 from flask import flash
 import os
 from flask_app.models.formValidation import User
-from flask_mail import Mail, Message
+# from flask_mail import Mail, Message
 from datetime import datetime
 import logging
 from flask_wtf.csrf import CSRFProtect
 
-mail = Mail(app)
+# mail = Mail(app)
 csrf = CSRFProtect(app)
 
 RECAPTCHA_SECRET_KEY = Config.RECAPTCHA_SECRET_KEY
@@ -20,7 +20,7 @@ RECAPTCHA_SECRET_KEY = Config.RECAPTCHA_SECRET_KEY
 @app.route('/')
 def homepage():
     current_year = datetime.now().year
-    return render_template('Home.html', current_year=current_year,recaptcha_site_key=app.config['RECAPTCHA_SITE_KEY'])
+    return render_template('Home.html', current_year=current_year,recaptcha_site_key=Config.RECAPTCHA_SITE_KEY)
 
 
 
