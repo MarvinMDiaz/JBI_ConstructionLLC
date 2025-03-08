@@ -1,13 +1,12 @@
-from flask import render_template, request, redirect, session, Flask
-import boto3  
+from flask import render_template, request, redirect, session, Flask, flash
 from flask_app.config import Config
 import requests
 from flask_app import app
-from flask import flash
 import os
 from flask_app.models.formValidation import User
-# from flask_mail import Mail, Message
 from datetime import datetime
+import boto3  
+
 import logging
 from flask_wtf.csrf import CSRFProtect
 
